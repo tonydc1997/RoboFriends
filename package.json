@@ -8,7 +8,7 @@
     "react-scripts": "1.1.4",
     "tachyons": "^4.9.1"
   },
-  "homepage" : "https://tonydc1997.github.io/RoboFriends/",
+  "homepage" : "http://myname.github.io/myapp",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
