@@ -8,7 +8,10 @@ class ErrorBoundary extends Component {
     }
   }
   render() {
-    
+    if (this.state.hasError) {
+      return <h1>Oooops. That's not good</h1>
+    }
+    return this.state.children;
   }
 }
 
