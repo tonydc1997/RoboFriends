@@ -5,6 +5,8 @@ import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
 import './App.css';
 
+import { setSearchField } from '../actions';
+
 class App extends Component {
   constructor() {
     super()
