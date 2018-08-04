@@ -51,4 +51,4 @@ onSearchChange = (event) => {
   }
 }
 
-export default connect()(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
