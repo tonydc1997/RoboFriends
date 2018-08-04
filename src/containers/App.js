@@ -8,6 +8,12 @@ import './App.css';
 
 import { setSearchField } from '../actions';
 
+const mapStateToProps = state => {
+  return {
+    searchField: state.searchRobots.searchField
+  }
+}
+
 class App extends Component {
   constructor() {
     super()
