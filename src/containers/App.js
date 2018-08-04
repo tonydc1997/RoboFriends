@@ -10,7 +10,7 @@ import { setSearchField } from '../actions';
 
 const mapStateToProps = state => {
   return {
-    searchField: state.searchRobots.searchField
+    searchField: state.searchField
   }
 }
 
