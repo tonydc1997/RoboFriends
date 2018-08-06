@@ -7,10 +7,14 @@ import ErrorBoundary from '../components/ErrorBoundary';
 import './App.css';
 
 import { setSearchField } from '../actions';
+import { requestRobots } from '../reducers';
 
 const mapStateToProps = state => {
   return {
-    searchField: state.searchRobots.searchField
+    searchField: state.searchRobots.searchField,
+    robots: state.requestRobots.robots,
+    isPending: state.requestRobots.isPending,
+    error: state.requestRobots.error
   }
 }
 
