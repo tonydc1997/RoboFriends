@@ -17,3 +17,9 @@ export const searchRobots = (state=initialState, action={}) => {
       return state;
   }
 }
+
+export const requestRobots = (state=initialState, action={}) => {
+  switch(action.type) {
+    
+  }
+}
