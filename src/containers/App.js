@@ -36,7 +36,7 @@ class App extends Component {
     const filteredRobots = robots.filter(robot => {
       return robot.name.toLowerCase().includes(searchField.toLowerCase());
     })
-    if (robots.length === 0) {
+    if (isPending) {
       return <h1>Loading</h1>
     } else {
       return (
