@@ -6,6 +6,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
+import Header from '../components/Header';
 import './App.css';
 
 const mapStateToProps = (state) => {
@@ -37,7 +38,7 @@ class App extends Component {
     })
     return (
         <div className='tc'>
-          
+          <Header />
           <SearchBox searchChange={onSearchChange} />
           <Scroll>
             { isPending ? <h1>Loading</h1> :
