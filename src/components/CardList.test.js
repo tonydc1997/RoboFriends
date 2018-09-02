@@ -11,6 +11,6 @@ it('Expect to render CardList component', () => {
       key: '2341234'
     }
   ]
-  expect(shallow(<CardList />)).toMatchSnapshot();
+  expect(shallow(<CardList robots={mockRobots} />)).toMatchSnapshot();
 })
 
