@@ -7,9 +7,9 @@ class CounterButton extends Component {
       count: 1
     }
   }
-  
+
   shouldComponentUpdate(nextProps, nextState) {
-    return false;
+    return true;
   }
 
   render() {
