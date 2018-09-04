@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Card from './Card';
 
-it('Expect to render card component', () => {
+it('Card: render card component', () => {
   expect(shallow(<Card />)).toMatchSnapshot();
 })
 
