@@ -13,7 +13,7 @@ shouldComponentUpdate(nextProps, nextState) {
         <h1 className='f2'>RoboFriends</h1>
         <CounterButton />
       </div>
-    ) 
+    );
   }
 }
 
