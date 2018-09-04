@@ -8,7 +8,12 @@ shouldComponentUpdate(nextProps, nextState) {
 
   render() {
     console.log('Header');
-    return <h1 className='f2'>RoboFriends</h1>
+    return(
+      <div>
+        <h1 className='f2'>RoboFriends</h1>
+        <CounterButton />
+      </div>
+    ) 
   }
 }
 
