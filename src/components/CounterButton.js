@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 
 class CounterButton extends Component {
-shouldComponentUpdate(nextProps, nextState) {
-  return false;
-}
+  constructor() {
+    super();
+    this.state = {
+      count: 1
+    }
+  }
+  
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
 
   render() {
     console.log('CounterButton');
