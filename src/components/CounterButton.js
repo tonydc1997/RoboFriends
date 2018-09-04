@@ -14,8 +14,10 @@ class CounterButton extends Component {
 
   render() {
     console.log('CounterButton');
-    return <h1 className='f2'>RoboFriends</h1>
+    return (
+      <button color={this.props.color} onClick={this.updateCount}></button>
+    );
   }
 }
 
-export default CounterButton;
+export default CounterButton; 
