@@ -12,6 +12,10 @@ class CounterButton extends Component {
     return true;
   }
 
+  updateCount = () => {
+    this.setState({count: this.state.count + 1})
+  }
+
   render() {
     console.log('CounterButton');
     return (
