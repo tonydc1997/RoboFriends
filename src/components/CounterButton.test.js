@@ -21,7 +21,7 @@ describe('CounterButton component', () => {
     const shallowCounter = shallow(<CounterButton initialCountValue={1} />);
     const instance = shallowCounter.instance();
     expect(instance.state.count).toBe(1);
-    expect(instance.shouldComponentUpdate(null, 1)).toBe(true);
+    expect(instance.shouldComponentUpdate(null, 1)).toBe(false);
   });
   
 
