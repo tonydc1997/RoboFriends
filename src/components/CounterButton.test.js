@@ -20,8 +20,8 @@ describe('CounterButton component', () => {
   it('shouldComponentUpdate: should not update count when nextState equals current state', () => {
     const shallowCounter = shallow(<CounterButton initialCountValue={1} />);
     const instance = shallowCounter.instance();
-    expect(instance.state.count).toBe('2');
-    instance.shouldComponentUpdate(nextProps, 2);
+    expect(instance.state.count).toBe(1);
+    expect(instance.shouldComponentUpdate(null, 1)).toBe(true);
   });
   
 
