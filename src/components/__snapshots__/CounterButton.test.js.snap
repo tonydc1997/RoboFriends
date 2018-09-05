@@ -1,20 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardList: render CardList component 1`] = `
+exports[`CounterButton component Counter: renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CardList
-    robots={
-        Array [
-            Object {
-              "email": "hamSarris@gmail.com",
-              "id": 1,
-              "key": "2341234",
-              "name": "Ham Sarris",
-            },
-          ]
-    }
-/>,
+  Symbol(enzyme.__unrendered__): <CounterButton />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -28,30 +17,18 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Card
-          email="hamSarris@gmail.com"
-          id={1}
-          name="Ham Sarris"
-/>,
+        "Count: ",
+        1,
       ],
+      "className": "br2 bg-light-green b--navy pb1 pt1 grow",
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "function",
-        "props": Object {
-          "email": "hamSarris@gmail.com",
-          "id": 1,
-          "name": "Ham Sarris",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "Count: ",
+      1,
     ],
-    "type": "div",
+    "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -60,30 +37,18 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Card
-            email="hamSarris@gmail.com"
-            id={1}
-            name="Ham Sarris"
-/>,
+          "Count: ",
+          1,
         ],
+        "className": "br2 bg-light-green b--navy pb1 pt1 grow",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "function",
-          "props": Object {
-            "email": "hamSarris@gmail.com",
-            "id": 1,
-            "name": "Ham Sarris",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "Count: ",
+        1,
       ],
-      "type": "div",
+      "type": "button",
     },
   ],
   Symbol(enzyme.__options__): Object {
