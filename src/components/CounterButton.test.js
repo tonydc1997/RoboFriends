@@ -8,6 +8,6 @@ describe('CounterButton component', () => {
   });
   it('shouldComponentUpdate: should set the initialCountValue to state', () => {
     const shallowCounter = shallow(<CounterButton initialCountValue={1} />);
-    expect(shallowCounter.instance().state.count).toBe(14);
+    expect(shallowCounter.instance().state.count).toBe(1);
   })
 });
