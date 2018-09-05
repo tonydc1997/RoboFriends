@@ -9,5 +9,9 @@ describe('CounterButton component', () => {
   it('shouldComponentUpdate: should set the initialCountValue to state', () => {
     const shallowCounter = shallow(<CounterButton initialCountValue={1} />);
     expect(shallowCounter.instance().state.count).toBe(1);
-  })
+  });
+  it('updateCount: should update count by grabbing current state and incrementing by 1', () => {
+    const shallowCounter = shallow(<CounterButton initialCountValue={1} />);
+    const instance = shallowCounter.instance();
+  });
 });
