@@ -13,7 +13,7 @@ describe('CounterButton component', () => {
   it('updateCount: should update count by grabbing current state and incrementing by 1', () => {
     const shallowCounter = shallow(<CounterButton initialCountValue={1} />);
     const instance = shallowCounter.instance();
-    expect(instance.state.count).toBe('4');
+    expect(instance.state.count).toBe(1);
     instance.updateCount();
     expect(instance.state.count).toBe('5');
   });
