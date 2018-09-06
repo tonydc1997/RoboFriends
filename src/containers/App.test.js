@@ -15,8 +15,10 @@ describe('App container', () => {
     wrapper = shallow(<App store={store}/>);
   });
 
-  it('App: renders correctly', () => {
-    expect(shallow(<App />)).toMatchSnapshot();
+  it('App: maps state and dispatch to props', () => {
+    expect(wrapper.props()).toEqual(expect.objectContaining({
+      
+    }));
   });
 
 });
