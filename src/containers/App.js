@@ -32,8 +32,9 @@ class App extends Component {
 
 
   render() {
-    
+    <MainPage />
   }
+}
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
