@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { setSearchField, requestRobots } from '../actions';
 
 import MainPage from '../components/MainPage';
+import './App.css';
 
 const mapStateToProps = (state) => {
   return {
@@ -20,12 +21,6 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 class App extends Component {
-
-  componentDidMount() {
-    this.props.onRequestRobots();
-  }
-
-
   render() {
     <MainPage />
   }
