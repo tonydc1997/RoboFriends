@@ -17,8 +17,20 @@ describe('App container', () => {
 
   it('App: maps state and dispatch to props', () => {
     expect(wrapper.props()).toEqual(expect.objectContaining({
-      
+      searchField: '',
+      robots: [],
+      isPending: true,
+
+      onSearchChange: expect.any(Function),
+      onRequestRobots: expect.any(Function)
     }));
+
   });
+
+  it('App: maps onSearchChange to dispatch setSearchField', () => {
+    wrapper.props().onSearchChange();
+    expect(store.dispatch).toHaveBeenCalledWith();
+  });
+
 
 });
