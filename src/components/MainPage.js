@@ -5,10 +5,10 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Header from '../components/Header';
-import './App.css';
+import './MainPage.css';
 
 
-class App extends Component {
+class MainPage extends Component {
 
   componentDidMount() {
     this.props.onRequestRobots();
@@ -37,4 +37,4 @@ class App extends Component {
   }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Main);
