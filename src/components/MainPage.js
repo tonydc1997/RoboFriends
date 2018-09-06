@@ -37,4 +37,4 @@ class MainPage extends Component {
   }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Main);
+export default MainPage;
