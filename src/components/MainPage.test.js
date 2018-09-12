@@ -43,6 +43,6 @@ describe('MainPage component', () => {
       username: 'Bruce',
       email: 'bb@gmail.com'
     }]);
-  })
+  });
 
 });
