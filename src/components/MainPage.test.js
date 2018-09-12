@@ -16,7 +16,7 @@ describe('MainPage component', () => {
   });
 
   it('MainPage: shallow renders without crashing', () => {
-
+    expect(wrapper).toContain('mockProps');
   });
 
 });
