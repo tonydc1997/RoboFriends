@@ -4,4 +4,15 @@ import MainPage from './MainPage';
 
 describe('MainPage component', () => {
 
+  let wrapper;
+  beforeEach(() => {
+    const mockProps = {
+      onRequestRobots: jest.fn(),
+      robots: [],
+      searchField: '',
+      isPending: true
+    }
+    wrapper = shallow(<MainPage { ...mockProps }/>);
+  });
+
 });
