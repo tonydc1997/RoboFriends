@@ -20,7 +20,7 @@ describe('MainPage component', () => {
   });
 
   it('filterRobots: filters robots correctly', () => {
-
+    expect(wrapper.instance()).filterRobots([]).toEqual();
   });
 
 });
