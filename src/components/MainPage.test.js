@@ -15,4 +15,8 @@ describe('MainPage component', () => {
     wrapper = shallow(<MainPage { ...mockProps }/>);
   });
 
+  it('MainPage: shallow renders without crashing', () => {
+
+  });
+
 });
