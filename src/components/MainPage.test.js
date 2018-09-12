@@ -4,7 +4,7 @@ import MainPage from './MainPage';
 
 describe('MainPage component', () => {
 
-  let wrapper;
+  let wrapper, instance;
   beforeEach(() => {
     const mockProps = {
       onRequestRobots: jest.fn(),
@@ -13,6 +13,7 @@ describe('MainPage component', () => {
       isPending: true
     }
     wrapper = shallow(<MainPage { ...mockProps }/>);
+    instance = wrapper.instance();
   });
 
   it('MainPage: shallow renders without crashing', () => {
@@ -20,7 +21,7 @@ describe('MainPage component', () => {
   });
 
   it('filterRobots: renders correctly when array is empty', () => {
-    expect(wrapper.instance().filterRobots()).toEqual([]);
+    expect(instance.filterRobots()).toEqual([]);
   });
 
   it('filterRobots: renders correctly when array is filled', () => {
