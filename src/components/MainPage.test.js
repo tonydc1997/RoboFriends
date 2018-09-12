@@ -23,8 +23,20 @@ describe('MainPage component', () => {
     expect(wrapper.instance().filterRobots()).toEqual([]);
   });
 
-  it('filterRobots: renders correctly when array is filled'() => {
-    
+  it('filterRobots: renders correctly when array is filled', () => {
+    const mockProps1 = {
+      onRequestRobots: jest.fn(),
+      robots: [{
+        id: 1,
+        name: 'Bruce Brenner',
+        username: 'Bruce',
+        email: 'bb@gmail.com'
+      }],
+      searchField: 'a',
+      isPending: true
+    }
+    wrapper = shallow(<MainPage { ...mockProps1 } />);
+    expect();
   })
 
 });
