@@ -40,7 +40,7 @@ describe('MainPage component', () => {
     expect(wrapper2.instance().filterRobots()).toEqual([{
       id: 1,
       name: 'Bruce Brenner',
-      username: 'Brce',
+      username: 'Bruce',
       email: 'bb@gmail.com'
     }]);
   })
