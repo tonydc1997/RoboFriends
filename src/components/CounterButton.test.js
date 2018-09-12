@@ -16,7 +16,7 @@ describe('CounterButton component', () => {
   });
 
   it('shouldComponentUpdate: should set the initialCountValue to state', () => {
-    expect(wrapper.instance().state.count).toBe(1);
+    expect(instance.state.count).toBe(1);
   });
 
   it('updateCount: should update count by grabbing current state and incrementing by 1', () => {
