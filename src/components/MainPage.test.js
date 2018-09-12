@@ -37,7 +37,7 @@ describe('MainPage component', () => {
       isPending: true
     }
     wrapper = shallow(<MainPage { ...mockProps1 } />);
-    expect();
+    expect(instance.filterRobots()).toEqual([]);
   })
 
 });
