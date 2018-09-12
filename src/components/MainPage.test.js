@@ -33,11 +33,16 @@ describe('MainPage component', () => {
         username: 'Bruce',
         email: 'bb@gmail.com'
       }],
-      searchField: 'a',
+      searchField: '',
       isPending: true
     }
-    wrapper = shallow(<MainPage { ...mockProps1 } />);
-    expect(instance.filterRobots()).toEqual([]);
+    const wrapper2 = shallow(<MainPage { ...mockProps1 } />);
+    expect(wrapper2.instance().filterRobots()).toEqual([{
+      id: 1,
+      name: 'Bruce Brenner',
+      username: 'Brce',
+      email: 'bb@gmail.com'
+    }]);
   })
 
 });
