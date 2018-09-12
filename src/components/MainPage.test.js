@@ -19,8 +19,8 @@ describe('MainPage component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('filterRobots: filters robots correctly', () => {
-    expect(wrapper.instance().filterRobots([])).toEqual([]);
+  it('filterRobots: renders correctly when array is empty', () => {
+    expect(wrapper.instance().filterRobots()).toEqual([]);
   });
 
 });
