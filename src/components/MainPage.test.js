@@ -23,4 +23,8 @@ describe('MainPage component', () => {
     expect(wrapper.instance().filterRobots()).toEqual([]);
   });
 
+  it('filterRobots: renders correctly when array is filled'() => {
+    
+  })
+
 });
