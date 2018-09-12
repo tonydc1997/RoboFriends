@@ -19,4 +19,8 @@ describe('MainPage component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('filterRobots: filters robots correctly', () => {
+
+  });
+
 });
