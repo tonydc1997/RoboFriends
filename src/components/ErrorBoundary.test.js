@@ -6,10 +6,10 @@ describe('ErrorBoundary Component', () => {
 
 
   it('ErrorBoundary: renders componentDidCatch', () => {
-    const errorBoundaryComponent = shallow(<ErrorBoundary />);
     const mockComponentDidCatch = jest.fn();
+    const errorBoundaryComponent = shallow(<ErrorBoundary componentDidCatch={mockComponentDidCatch} />);
 
-    expect(mockComponentDidCatch).toBe('');
+    expect(errorBoundaryComponent.html()).toBe('');
   });
 
   // it('componentDidCatch: should setState for hasError to true if there is an error', () => {
@@ -23,6 +23,6 @@ describe('ErrorBoundary Component', () => {
 
   // it('ErrorBoundary: returns robots / CardList if componentDid *Not* Catch an error', () => {
 
-  });
+  // });
 
 });
