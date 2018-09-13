@@ -4,7 +4,7 @@ import Scroll from 'Scroll';
 
 describe('Scroll Component', () => {
 
-  it('Scroll: renders a div', () => {
+  it('Scroll: returns CardList when isPending is false', () => {
 
   });
   
