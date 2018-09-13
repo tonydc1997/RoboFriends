@@ -21,7 +21,7 @@ describe('MainPage component', () => {
   });
 
   it('filterRobots: renders correctly when array is empty', () => {
-    expect(instance.filterRobots()).toEqual([]);
+    expect(wrapper.instance().filterRobots()).toEqual([]);
   });
 
   it('filterRobots: renders correctly when array is filled', () => {
