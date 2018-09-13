@@ -4,7 +4,10 @@ import ErrorBoundary from './ErrorBoundary';
 
 describe('ErrorBoundary Component', () => {
 
-  const errorBoundaryComponent = shallow(<ErrorBoundary />);
+
+  it('componentDidCatch: should setState for hasError to true if there is an error', () => {
+    const errorBoundaryComponent = shallow(<ErrorBoundary />);
+  });
 
   it('ErrorBoundary: returns error message if componentDidCatch an error', () => {
 
