@@ -46,15 +46,12 @@ describe('MainPage component', () => {
     }]);
   });
 
-  it('isPending: renders properly', () => {
+  it('isPending: renders properly and returns cardList / filteredRobots when false', () => {
     expect(wrapper.instance().props.isPending).toEqual(false);
   });
 
-  it('isPending: renders cardList / filteredRobots when true', () => {
-    expect();
-  });
 
-  it('isPending: renders <h1>Loading</h1> when true', () => {
+  it('isPending: renders properly and returns <h1>Loading</h1> when true', () => {
     mockProps = {
       onRequestRobots: jest.fn(),
       robots: [],
@@ -62,7 +59,7 @@ describe('MainPage component', () => {
       isPending: true
     }
 
-    expect(mockProps.isPending).toEqual(ture);
+    expect(mockProps.isPending).toEqual(true);
 
   });
 
