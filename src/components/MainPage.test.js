@@ -4,7 +4,7 @@ import MainPage from './MainPage';
 
 describe('MainPage component', () => {
 
-  let wrapper, instance, mockProps;
+  let wrapper, mockProps;
 
   beforeEach(() => {
     mockProps = {
@@ -14,7 +14,6 @@ describe('MainPage component', () => {
       isPending: false
     }
     wrapper = shallow(<MainPage { ...mockProps }/>);
-    instance = wrapper.instance();
   });
 
   it('MainPage: shallow renders without crashing', () => {
