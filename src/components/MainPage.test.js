@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import MainPage from './MainPage';
+import Scroll from './Scroll';
 
 describe('MainPage component', () => {
 
@@ -47,6 +48,7 @@ describe('MainPage component', () => {
 
   it('isPending: renders properly and returns cardList / filteredRobots when false', () => {
     expect(mockProps.isPending).toEqual(false);
+
   });
 
 
@@ -59,6 +61,7 @@ describe('MainPage component', () => {
     }
 
     expect(mockProps.isPending).toEqual(true);
+    expect()
 
   });
 
