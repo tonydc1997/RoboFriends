@@ -10,10 +10,10 @@ describe('Scroll Component', () => {
 
   });
 
-  it('Scroll: returns CardList when isPending is false', () => {
-    // 
+  // it('Scroll: returns CardList when isPending is false', () => {
+  //   // 
 
-  });
+  // });
   
   // it('isPending: renders properly and returns cardList / filteredRobots when false', () => {
   //   expect(mockProps.isPending).toEqual(false);
