@@ -10,7 +10,7 @@ describe('MainPage component', () => {
       onRequestRobots: jest.fn(),
       robots: [],
       searchField: '',
-      isPending: true
+      isPending: false
     }
     wrapper = shallow(<MainPage { ...mockProps }/>);
     instance = wrapper.instance();
@@ -34,7 +34,7 @@ describe('MainPage component', () => {
         email: 'bb@gmail.com'
       }],
       searchField: '',
-      isPending: true
+      isPending: false
     }
     const wrapper2 = shallow(<MainPage { ...mockProps1 } />);
     expect(wrapper2.instance().filterRobots()).toEqual([{
