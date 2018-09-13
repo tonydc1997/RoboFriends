@@ -46,14 +46,23 @@ describe('MainPage component', () => {
     }]);
   });
 
+  it('isPending: renders properly', () => {
+    expect(wrapper.instance().props.isPending).toEqual(false);
+  });
+
   it('isPending: renders cardList / filteredRobots when true', () => {
     expect();
   });
 
   it('isPending: renders <h1>Loading</h1> when true', () => {
-    const mockIsPending = {
-
+    mockProps = {
+      onRequestRobots: jest.fn(),
+      robots: [],
+      searchField: '',
+      isPending: true
     }
+
+    expect(mockProps.isPending).toEqual(ture);
 
   });
 
