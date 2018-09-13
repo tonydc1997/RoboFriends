@@ -17,8 +17,7 @@ describe('Header Component', () => {
   });
 
   it('shouldComponentUpdate: should return false', () => {
-
-    expect(headerComponent.instance().shouldComponentUpdate(null, null)).toBe('falsey');
+    expect(headerComponent.instance().shouldComponentUpdate(null, null)).toBe(false);
     
   });
 
