@@ -46,7 +46,11 @@ describe('MainPage component', () => {
     }]);
   });
 
-  it('isPending: renders properly and returns cardList / filteredRobots when false', () => {
+});
+
+describe('Scroll Component', () => {
+
+  it('isPending: renders properly and returns an array when false', () => {
     expect(mockProps.isPending).toEqual(false);
 
   });
