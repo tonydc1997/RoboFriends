@@ -45,4 +45,12 @@ describe('MainPage component', () => {
     }]);
   });
 
+  it('isPending: renders cardList / filteredRobots when true', () => {
+
+  });
+
+  it('isPending: renders <h1>Loading</h1> when true', () => {
+
+  });
+
 });
