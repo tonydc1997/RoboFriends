@@ -1,10 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Scroll from 'Scroll';
+import Scroll from './Scroll';
 
 describe('Scroll Component', () => {
 
+  it('Scroll: renders correctly', () => {
+    const scrollComponent = shallow(<Scroll />)
+    expect(scrollComponent.html()).toContain('div');
+
+  });
+
   it('Scroll: returns CardList when isPending is false', () => {
+    // 
 
   });
   
