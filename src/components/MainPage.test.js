@@ -47,7 +47,7 @@ describe('MainPage component', () => {
   });
 
   it('isPending: renders properly and returns cardList / filteredRobots when false', () => {
-    expect(wrapper.instance().props.isPending).toEqual(false);
+    expect(mockProps.isPending).toEqual(false);
   });
 
 
