@@ -7,13 +7,13 @@ describe('Header Component', () => {
   let headerComponent;
 
   beforeEach(() => {
-    headerComponent = shallow(<Header />).html();
+    headerComponent = shallow(<Header />);
   });
 
   it('Header: should return a div, h1, and button', () => {
-    expect(headerComponent).toContain('div');
-    expect(headerComponent).toContain('h1');
-    expect(headerComponent).toContain('button');
+    expect(headerComponent.html()).toContain('div');
+    expect(headerComponent.html()).toContain('h1');
+    expect(headerComponent.html()).toContain('button');
   });
 
   it('shouldComponentUpdate: should return false', () => {
