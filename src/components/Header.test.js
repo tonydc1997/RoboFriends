@@ -4,11 +4,21 @@ import Header from './Header';
 
 describe('Header Component', () => {
 
+  let headerComponent;
+
+  beforeEach(() => {
+    headerComponent = shallow(<Header />).html();
+  });
+
   it('Header: should return a div, h1, and button', () => {
-    const headerComponent = shallow(<Header />).html();
     expect(headerComponent).toContain('div');
     expect(headerComponent).toContain('h1');
     expect(headerComponent).toContain('button');
+  });
+
+  it('shouldComponentUpdate: should return false', () => {
+
+    
   });
 
 
