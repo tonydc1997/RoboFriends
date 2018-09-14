@@ -14,7 +14,7 @@ describe('ErrorBoundary Component', () => {
   });
 
   it('ErrorBoundary: renders child component when no errors are found', () => {
-
+    expect(errorBoundaryComponent.find('h1').exists()).toBeTruthy();
   });
 
 });
