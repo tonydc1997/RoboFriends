@@ -26,19 +26,16 @@ describe('ErrorBoundary Component', () => {
       <ErrorBoundary>
         <h3>Child Component Here!</h3>
       </ErrorBoundary>);
+
+      errorBoundaryComponent.instance().componentDidCatch('Ooops, there was an error');
+      errorBoundaryComponent.update();
     });
 
     it('ErrorBoundary: should update state to indicate an error', () => {
-      errorBoundaryComponent.instance().componentDidCatch('Ooops, there was an error');
-      errorBoundaryComponent.update();
-  
       expect(errorBoundaryComponent.instance().state.hasError).toBeTruthy();
     });
   
     it('ErrorBoundary: should not render child component', () => {
-      errorBoundaryComponent.instance().componentDidCatch('Ooops, there was an error');
-      errorBoundaryComponent.update();
-  
       expect(errorBoundaryComponent.find('h3').exists()).toBe('false');
     });
   });
