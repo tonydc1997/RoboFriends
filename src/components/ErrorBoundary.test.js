@@ -17,4 +17,8 @@ describe('ErrorBoundary Component', () => {
     expect(errorBoundaryComponent.find('h1').exists()).toBeTruthy();
   });
 
+  it('ErrorBoundary: should update state to indicate an error if it exists', () => {
+    
+  });
+
 });
