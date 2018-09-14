@@ -19,6 +19,15 @@ describe('ErrorBoundary Component', () => {
 
   describe('When error is detected', () => {
 
+    let errorBoundaryComponent;
+
+    beforeEach(() => {
+      errorBoundaryComponent = shallow(
+      <ErrorBoundary>
+        <h3>Child Component Here!</h3>
+      </ErrorBoundary>);
+    });
+
     it('ErrorBoundary: should update state to indicate an error', () => {
       errorBoundaryComponent.instance().componentDidCatch('Ooops, there was an error');
       errorBoundaryComponent.update();
