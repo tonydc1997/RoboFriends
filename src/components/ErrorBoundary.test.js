@@ -4,6 +4,10 @@ import ErrorBoundary from './ErrorBoundary';
 
 describe('ErrorBoundary Component', () => {
 
+  describe('When no errors are detected', () => {
+    
+  });
+
   let errorBoundaryComponent;
 
   beforeEach(() => {
@@ -38,6 +42,7 @@ describe('ErrorBoundary Component', () => {
     it('ErrorBoundary: should not render child component', () => {
       expect(errorBoundaryComponent.find('h3').exists()).toBe('false');
     });
+
   });
 
 });
