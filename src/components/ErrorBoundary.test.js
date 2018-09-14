@@ -25,7 +25,10 @@ describe('ErrorBoundary Component', () => {
   });
 
   it('ErrorBoundary: should not render child component when error is detected', () => {
+    errorBoundaryComponent.instance().componentDidCatch('Ooops, there was an error');
+    errorBoundaryComponent.update();
 
+    
   });
 
 });
