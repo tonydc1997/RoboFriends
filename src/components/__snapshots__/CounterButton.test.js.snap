@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CounterButton component Counter: renders correctly 1`] = `
+exports[`CounterButton component Counter: snapshots CSS-in-JS for current UX 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CounterButton
