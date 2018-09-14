@@ -21,7 +21,7 @@ describe('ErrorBoundary Component', () => {
     errorBoundaryComponent.instance().componentDidCatch('Ooops, there was an error');
     errorBoundaryComponent.update();
 
-    expect(errorBoundaryComponent.instance().state.hasError).toBe();
+    expect(errorBoundaryComponent.instance().state.hasError).toBeTruthy();
   });
 
 });
