@@ -6,7 +6,9 @@ describe('SearchBox Component', () => {
 
   let searchBoxComponent;
 
-  
+  beforeEach(() => {
+    searchBoxComponent = shallow(<SearchBox />);
+  });
 
   it('SearchBox: returns a div and input', () => {
 
