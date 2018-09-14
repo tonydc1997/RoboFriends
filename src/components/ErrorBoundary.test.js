@@ -5,21 +5,22 @@ import ErrorBoundary from './ErrorBoundary';
 describe('ErrorBoundary Component', () => {
 
   describe('When no errors are detected', () => {
-    
+
+    let errorBoundaryComponent;
+
+    beforeEach(() => {
+      errorBoundaryComponent = shallow(
+      <ErrorBoundary>
+        <h3>Child Component Here!</h3>
+      </ErrorBoundary>);
+    });
+  
+    it('ErrorBoundary: renders child component when no errors are found', () => {
+      expect(errorBoundaryComponent.find('h3').exists()).toBeTruthy();
+    });
+
   });
 
-  let errorBoundaryComponent;
-
-  beforeEach(() => {
-    errorBoundaryComponent = shallow(
-    <ErrorBoundary>
-      <h3>Child Component Here!</h3>
-    </ErrorBoundary>);
-  });
-
-  it('ErrorBoundary: renders child component when no errors are found', () => {
-    expect(errorBoundaryComponent.find('h3').exists()).toBeTruthy();
-  });
 
   describe('When error is detected', () => {
 
@@ -45,4 +46,6 @@ describe('ErrorBoundary Component', () => {
 
   });
 
+
+  
 });
