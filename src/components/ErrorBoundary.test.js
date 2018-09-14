@@ -41,11 +41,11 @@ describe('ErrorBoundary Component', () => {
     });
   
     it('ErrorBoundary: should not render child component', () => {
-      expect(errorBoundaryComponent.find('h3').exists()).toBe('false');
+      expect(errorBoundaryComponent.find('h3').exists()).toBeFalsy();
     });
 
   });
 
 
-  
+
 });
