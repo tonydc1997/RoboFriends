@@ -9,12 +9,12 @@ describe('ErrorBoundary Component', () => {
   beforeEach(() => {
     errorBoundaryComponent = shallow(
     <ErrorBoundary>
-      <h1>Child Component Here!</h1>
+      <h3>Child Component Here!</h3>
     </ErrorBoundary>);
   });
 
   it('ErrorBoundary: renders child component when no errors are found', () => {
-    expect(errorBoundaryComponent.find('h1').exists()).toBeTruthy();
+    expect(errorBoundaryComponent.find('h3').exists()).toBeTruthy();
   });
 
   it('ErrorBoundary: should update state to indicate an error if it exists', () => {
@@ -28,7 +28,7 @@ describe('ErrorBoundary Component', () => {
     errorBoundaryComponent.instance().componentDidCatch('Ooops, there was an error');
     errorBoundaryComponent.update();
 
-    
+    expect(errorBoundaryComponent.find('h3').exists()).toBe('false');
   });
 
 });
