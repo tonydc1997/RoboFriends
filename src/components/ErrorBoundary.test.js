@@ -18,7 +18,8 @@ describe('ErrorBoundary Component', () => {
   });
 
   it('ErrorBoundary: should update state to indicate an error if it exists', () => {
-    
+    errorBoundaryComponent.instance().componentDidCatch('Ooops, there was an error');
+    errorBoundaryComponent.update();
   });
 
 });
