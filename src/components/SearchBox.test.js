@@ -14,4 +14,8 @@ describe('SearchBox Component', () => {
     expect(searchBoxComponent.html()).toContain('div');
     expect(searchBoxComponent.html()).toContain('input');
   });
+
+  it('SearchBox: Snapshots the CSS-in-JS styles so if altered and breaks the UX, one can view the differences', () => {
+
+  });
 });
