@@ -11,6 +11,6 @@ describe('SearchBox Component', () => {
   });
 
   it('SearchBox: returns a div and input', () => {
-
+    expect(searchBoxComponent.html()).toContain('gibberish');
   });
 });
