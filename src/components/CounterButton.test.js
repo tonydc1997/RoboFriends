@@ -12,7 +12,7 @@ describe('CounterButton component', () => {
   });
 
   it('Counter: returns a button', () => {
-    expect(wrapper.html()).toContain('Button');
+    expect(wrapper.html()).toContain('button');
   });
 
   it('Counter: snapshots CSS-in-JS for current UX', () => {
