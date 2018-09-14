@@ -11,7 +11,7 @@ describe('CounterButton component', () => {
     instance = wrapper.instance();
   });
 
-  it('Counter: renders correctly', () => {
+  it('Counter: snapshots CSS-in-JS for current UX', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
