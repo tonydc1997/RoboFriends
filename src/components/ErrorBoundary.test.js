@@ -24,4 +24,8 @@ describe('ErrorBoundary Component', () => {
     expect(errorBoundaryComponent.instance().state.hasError).toBeTruthy();
   });
 
+  it('ErrorBoundary: should not render child component when error is detected', () => {
+
+  });
+
 });
