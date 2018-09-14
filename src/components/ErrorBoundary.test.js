@@ -4,9 +4,14 @@ import ErrorBoundary from './ErrorBoundary';
 
 describe('ErrorBoundary Component', () => {
 
-  let ErrorBoundaryComponent;
+  let errorBoundaryComponent;
 
-
+  beforeEach(() => {
+    errorBoundaryComponent = shallow(
+    <ErrorBoundary>
+      <h1>Child Component Here!</h1>
+    </ErrorBoundary>);
+  });
 
   it('ErrorBoundary: renders child component when no errors are found', () => {
 
