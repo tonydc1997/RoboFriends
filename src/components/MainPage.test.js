@@ -49,11 +49,20 @@ describe('MainPage component', () => {
   describe('Scroll Component', () => {
 
     describe('When isPending returns true', () => {
+
+      let scrollComponent;
+
+      beforeEach(() => {
+        scrollComponent = shallow(<Scroll></Scroll>);
+      });
+
       it('isPending: should return <h1>Loading</h1>', () => {
 
       });
     });
   
+
+
     describe('When isPending returns false', () => {
       
     });
