@@ -45,14 +45,20 @@ describe('MainPage component', () => {
     }]);
   });
 
+  describe('Scroll Component', () => {
 
-  describe('When isPending returns true', () => {
-    it('isPending: ')  ;
+    describe('When isPending returns true', () => {
+      it('isPending: should return <h1>Loading</h1>', () => {
+
+      });
+    });
+  
+    describe('When isPending returns false', () => {
+      
+    });
   });
 
-  describe('When isPending returns false', () => {
-    
-  });
+
   
   
 
