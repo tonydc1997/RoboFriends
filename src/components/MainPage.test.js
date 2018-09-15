@@ -77,7 +77,9 @@ describe('MainPage component', () => {
       it('isPending: should return children components', () => {
         expect(scrollComponent.find('h1').exists()).toBeFalsy();
         expect(scrollComponent.find('div').exists()).toBeTruthy();
-        expect(scrollComponent.html()).toContain();
+        expect(scrollComponent.html()).toContain(
+          '<div>I have an ErrorBoundary, and a CardList full of Cards!</div>'
+        );
       });
 
 
