@@ -76,6 +76,7 @@ describe('MainPage component', () => {
       
       it('isPending: should return children components', () => {
         expect(scrollComponent.find('h1').exists()).toBeFalsy();
+        expect(scrollComponent.find('div').exists()).toBeFalsy();
       });
 
 
