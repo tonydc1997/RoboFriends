@@ -58,6 +58,9 @@ describe('MainPage component', () => {
 
       it('isPending: should return <h1>Loading</h1>', () => {
         expect(scrollComponent.find('h1').exists()).toBeTruthy();
+        expect(scrollComponent.html()).toContain(
+          <h1>Loading</h1>
+        );
       });
     });
   
@@ -68,7 +71,7 @@ describe('MainPage component', () => {
       let scrollComponent;
 
       beforeEach(() => {
-        scrollComponent = shallow(<Scroll><h1>Loading</h1></Scroll>);
+        scrollComponent = shallow(<Scroll><div>I have an ErrorBoundary, and a CardList full of Cards!</div></Scroll>);
       });
       
       it('isPending: should return children components', () => {
