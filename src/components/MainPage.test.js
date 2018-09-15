@@ -44,6 +44,16 @@ describe('MainPage component', () => {
       email: 'bb@gmail.com'
     }]);
   });
+
+
+  describe('When isPending returns true', () => {
+    it('isPending: ')  ;
+  });
+
+  describe('When isPending returns false', () => {
+    
+  });
+  
   
 
 });
