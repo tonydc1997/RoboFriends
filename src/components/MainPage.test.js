@@ -57,7 +57,7 @@ describe('MainPage component', () => {
       });
 
       it('isPending: should return <h1>Loading</h1>', () => {
-        
+        expect(scrollComponent.find('h1').exists()).toBe('');
       });
     });
   
