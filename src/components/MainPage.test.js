@@ -53,19 +53,25 @@ describe('MainPage component', () => {
       let scrollComponent;
 
       beforeEach(() => {
-        scrollComponent = shallow(<Scroll></Scroll>);
+        scrollComponent = shallow(<Scroll><h1>Loading</h1></Scroll>);
       });
 
       it('isPending: should return <h1>Loading</h1>', () => {
-
+        
       });
     });
   
 
 
     describe('When isPending returns false', () => {
-      
+      it('isPending: should return children components', () => {
+
+      });
+
+
     });
+
+
   });
 
 
