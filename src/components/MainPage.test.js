@@ -50,11 +50,17 @@ describe('MainPage component', () => {
 
     describe('Initial state of Scroll Component', () => {
 
+      let scrollComponent;
+
+      beforeEach(() => {
+        scrollComponent = shallow(<Scroll><h1>Loading</h1></Scroll>);
+      });
+
       it('isPending: should return a state', () => {
         expect(scrollComponent.instance()).toBe('');
       });
 
-      
+
     });
 
     describe('When isPending returns true', () => {
