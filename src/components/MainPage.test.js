@@ -62,6 +62,12 @@ describe('MainPage component', () => {
           '<h1>Loading</h1>'
         );
       });
+
+      it('isPending: should return a state', () => {
+        expect(scrollComponent.instance()).toBe('');
+      });
+
+
     });
   
 
