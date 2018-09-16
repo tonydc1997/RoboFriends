@@ -48,6 +48,15 @@ describe('MainPage component', () => {
 
   describe('Scroll Component', () => {
 
+    describe('Initial state of Scroll Component', () => {
+
+      it('isPending: should return a state', () => {
+        expect(scrollComponent.instance()).toBe('');
+      });
+
+      
+    });
+
     describe('When isPending returns true', () => {
 
       let scrollComponent;
@@ -61,10 +70,6 @@ describe('MainPage component', () => {
         expect(scrollComponent.html()).toContain(
           '<h1>Loading</h1>'
         );
-      });
-
-      it('isPending: should return a state', () => {
-        expect(scrollComponent.instance()).toBe('');
       });
 
 
