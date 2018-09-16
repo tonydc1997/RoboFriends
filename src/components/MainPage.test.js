@@ -68,12 +68,11 @@ describe('MainPage component', () => {
       let scrollComponent;
 
       beforeEach(() => {
-        scrollComponent = shallow(<Scroll><h1>Loading</h1></Scroll>);
-        scrollComponent.setState({ isPending: true });
+        scrollComponent = shallow(<Scroll isPending={true}><h1>Loading</h1></Scroll>);
       });
 
       it('isPending: should return <h1>Loading</h1>', () => {
-        expect(scrollComponent.find('h1').exists()).toBe();
+        expect(scrollComponent.find('h1').exists()).toBeTruthy();
         expect(scrollComponent.html()).toContain(
           '<h1>Loading</h1>'
         );
