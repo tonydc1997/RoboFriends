@@ -49,7 +49,12 @@ describe('requestRobots Reducer', () => {
 
   it('should handle REQUEST_ROBOTS_SUCCESS', () => {
     expect(reducers.requestRobots(initialStateRobots, {
-      type: REQUEST_ROBOTS_SUCCESS
+      type: REQUEST_ROBOTS_SUCCESS,
+      payload: [{
+        id: '01',
+        name: 'Tester',
+        email: 'tester@gmail.com'
+      }]
     })).toEqual({
       isPending: true,
       robots: [],
