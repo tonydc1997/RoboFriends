@@ -38,7 +38,9 @@ describe('requestRobots Reducer', () => {
   });
 
   it('should handle REQUEST_ROBOTS_PENDING', () => {
-    
+    expect(reducers.requestRobots(initialStateRobots, {
+      type: REQUEST_ROBOTS_PENDING
+    })).toEqual();
   });
 
 });
