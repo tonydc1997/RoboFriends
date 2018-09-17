@@ -21,7 +21,7 @@ const initialStateSearch = {
       type: CHANGE_SEARCH_FIELD,
       payload: 'Black Mirror'
     })).toEqual({
-      searchField: 'Black Mirrors'
+      searchField: 'Black Mirror'
     });
   });
 });
