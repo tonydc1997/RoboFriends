@@ -16,7 +16,10 @@ const initialStateSearch = {
     expect(reducers.searchRobots(undefined, {})).toEqual({ searchField: ''});
   });
 
-  it('handles the CHANCE_SEARCHFIELD', () => {
-    expect(reducers.searchRobots(undefined, {})).toEqual({ searchField: ''});
+  it('handles the CHANGE_SEARCHFIELD', () => {
+    expect(reducers.searchRobots(initialStateSearch, {
+      type: type.CHANGE_SEARCH_FIELD,
+      payload: 'Black Mirror'
+    }));
   });
 });
