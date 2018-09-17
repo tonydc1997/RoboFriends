@@ -7,7 +7,7 @@ import {
 
 import * as reducers from './reducers';
 
-describe('searchRobots  pure function', () => {
+describe('searchRobots Reducer', () => {
 const initialStateSearch = {
   searchField: ''
 }
@@ -26,6 +26,6 @@ const initialStateSearch = {
   });
 });
 
-describe('requestRobots pure function', () => {
+describe('requestRobots Reducer', () => {
   
 });
