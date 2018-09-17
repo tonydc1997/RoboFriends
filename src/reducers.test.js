@@ -56,8 +56,12 @@ describe('requestRobots Reducer', () => {
         email: 'tester@gmail.com'
       }]
     })).toEqual({
-      isPending: true,
-      robots: [],
+      isPending: false,
+      robots: [{
+        id: '01',
+        name: 'Tester',
+        email: 'tester@gmail.com'
+      }],
       error: ''
     });
   });
