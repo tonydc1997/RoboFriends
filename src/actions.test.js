@@ -18,5 +18,7 @@ describe('setSearchField action', () => {
 });
 
 describe('requestRobots action', () => {
-  
+  it('should handle requestRobots api', () => {
+    
+  });
 });
