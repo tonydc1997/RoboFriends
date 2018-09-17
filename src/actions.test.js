@@ -13,8 +13,7 @@ describe('setSearchField action', () => {
       type: CHANGE_SEARCH_FIELD,
       payload: text
     }
-
-    
+    expect(actions.setSearchField(text)).toEqual();
   });
 });
 
