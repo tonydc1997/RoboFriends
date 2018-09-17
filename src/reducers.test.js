@@ -9,6 +9,6 @@ import * as reducers from './reducers';
 
 describe('searchRobots', () => {
   it('returns the initial state', () => {
-    expect(reducers.searchRobots(undefined, {})).toEqual({ searchField: 'hi bob'});
+    expect(reducers.searchRobots(undefined, {})).toEqual({ searchField: ''});
   });
 });
