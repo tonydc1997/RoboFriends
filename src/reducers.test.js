@@ -7,4 +7,8 @@ import {
 
 import * as reducers from './reducers';
 
-
+describe('searchRobots', () => {
+  it('returns the initial state', () => {
+    
+  });
+});
