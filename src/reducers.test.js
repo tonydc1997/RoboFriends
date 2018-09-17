@@ -11,4 +11,8 @@ describe('searchRobots', () => {
   it('returns the initial state', () => {
     expect(reducers.searchRobots(undefined, {})).toEqual({ searchField: ''});
   });
+
+  it('handles the CHANCE_SEARCHFIELD', () => {
+    expect(reducers.searchRobots(undefined, {})).toEqual({ searchField: ''});
+  });
 });
