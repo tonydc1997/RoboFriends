@@ -8,6 +8,12 @@ import {
 
 describe('setSearchField action', () => {
   it('should create an action to search for robots', () => {
+    const text = "NextGen";
+    const expectedAction = {
+      type: CHANGE_SEARCH_FIELD,
+      payload: text
+    }
+
     
   });
 });
