@@ -28,7 +28,7 @@ const initialStateSearch = {
 
 describe('requestRobots Reducer', () => {
   const initialStateRobots = {
-    isPending: true,
+    isPending: false,
     robots: [],
     error: ''
   }
