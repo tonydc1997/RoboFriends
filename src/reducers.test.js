@@ -47,4 +47,14 @@ describe('requestRobots Reducer', () => {
     });
   });
 
+  it('should handle REQUEST_ROBOTS_SUCCESS', () => {
+    expect(reducers.requestRobots(initialStateRobots, {
+      type: REQUEST_ROBOTS_SUCCESS
+    })).toEqual({
+      isPending: true,
+      robots: [],
+      error: ''
+    });
+  });
+
 });
