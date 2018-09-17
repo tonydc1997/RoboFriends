@@ -7,7 +7,7 @@ import {
 
 import * as reducers from './reducers';
 
-describe('searchRobots', () => {
+describe('searchRobots  pure function', () => {
 const initialStateSearch = {
   searchField: ''
 }
@@ -24,4 +24,8 @@ const initialStateSearch = {
       searchField: 'Black Mirror'
     });
   });
+});
+
+describe('requestRobots pure function', () => {
+  
 });
