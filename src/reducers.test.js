@@ -69,11 +69,11 @@ describe('requestRobots Reducer', () => {
   it('should handle REQUEST_ROBOTS_FAILED', () => {
     expect(reducers.requestRobots(initialStateRobots, {
       type: REQUEST_ROBOTS_FAILED,
-      error: "there was an error"
+      payload: 'Oops! Something went wrong!'
     })).toEqual({
       isPending: false,
       robots: [],
-      error: 'there was an errors'
+      error: 'Oops! Something went wrong!'
     });
   });
 
