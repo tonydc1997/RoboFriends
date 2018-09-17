@@ -20,7 +20,7 @@ describe('setSearchField action', () => {
 describe('requestRobots action', () => {
   it('should handle requestRobots api', () => {
     const expectedAction = {
-      type: REQUEST_ROBOTS_PENDING,
+      type: REQUEST_ROBOTS_PENDING
     }
     expect(actions.requestRobots()).toEqual(expectedAction);  
   });
