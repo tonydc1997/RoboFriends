@@ -19,6 +19,11 @@ describe('setSearchField action', () => {
 
 describe('requestRobots action', () => {
   it('should handle requestRobots api', () => {
-    
+    const text = "NextGen";
+    const expectedAction = {
+      type: CHANGE_SEARCH_FIELD,
+      payload: text
+    }
+    expect(actions.requestRobots()).toEqual(expectedAction);  
   });
 });
