@@ -27,5 +27,11 @@ const initialStateSearch = {
 });
 
 describe('requestRobots Reducer', () => {
+  const initialStateRobots = {
+    isPending: true,
+    robots: [],
+    error: ''
+  }
+
   
 });
