@@ -33,5 +33,8 @@ describe('requestRobots Reducer', () => {
     error: ''
   }
 
-  
+  it('returns the initial state', () => {
+    expect(reducers.requestRobots(undefined, {})).toEqual({ searchField: ''});
+  });
+
 });
