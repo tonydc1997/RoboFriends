@@ -12,11 +12,11 @@ const initialStateSearch = {
   searchField: ''
 }
 
-  it('returns the initial state', () => {
+  it('should return the initial state', () => {
     expect(reducers.searchRobots(undefined, {})).toEqual({ searchField: ''});
   });
 
-  it('handles the CHANGE_SEARCHFIELD', () => {
+  it('should handle the CHANGE_SEARCHFIELD', () => {
     expect(reducers.searchRobots(initialStateSearch, {
       type: CHANGE_SEARCH_FIELD,
       payload: 'Black Mirror'
@@ -33,7 +33,7 @@ describe('requestRobots Reducer', () => {
     error: ''
   }
 
-  it('returns the initial state', () => {
+  it('should return the initial state', () => {
     expect(reducers.requestRobots(undefined, {})).toEqual(initialStateRobots);
   });
 
