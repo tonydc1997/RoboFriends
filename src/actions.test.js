@@ -5,7 +5,7 @@ import {
   REQUEST_ROBOTS_SUCCESS, 
   REQUEST_ROBOTS_FAILED  
 } from './constants.js';
-import configureStore from 'redux-mock-store';
+import configureMockStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
 
 describe('setSearchField action', () => {
@@ -20,12 +20,13 @@ describe('setSearchField action', () => {
 });
 
 describe('requestRobots action', () => {
-const mockStore = configureStore([thunkMiddleware]);
+const mockStore = configureMockStore([thunkMiddleware]);
 
   it('should handle requestRobots api', () => {
     const store = mockStore();
     store.dispatch(actions.requestRobots());
     const action = store.getActions();
+    console.log(action);
     const expectedAction = {
       type: REQUEST_ROBOTS_PENDING
     }
