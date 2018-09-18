@@ -5,6 +5,7 @@ import {
   REQUEST_ROBOTS_SUCCESS, 
   REQUEST_ROBOTS_FAILED  
 } from './constants.js';
+import configureStore from 'redux-mock-store';
 
 describe('setSearchField action', () => {
   it('should create an action to search for robots', () => {
