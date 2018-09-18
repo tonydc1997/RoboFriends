@@ -22,7 +22,7 @@ describe('setSearchField action', () => {
 describe('requestRobots action', () => {
 const mockStore = configureMockStore([thunkMiddleware]);
 
-  it('should handle requestRobots api', () => {
+  it('should handle initial dispatch', () => {
     const store = mockStore();
     store.dispatch(actions.requestRobots());
     const action = store.getActions();
