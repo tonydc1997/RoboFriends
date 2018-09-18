@@ -23,14 +23,20 @@ describe('setSearchField action', () => {
 
 describe('requestRobots action', () => {
 const mockStore = configureMockStore([thunkMiddleware]);
-const jsonPlaceholder = nock('https://jsonplaceholder.typicode.com/users')
-  .get('/users/1')
-  .reply(200, {
-    id: 4,
-    name: "Patricia Lebsack",
-    username: "Karianne",
-    email: "Julianne.OConner@kory.org",
-  });
+// const jsonPlaceholder = nock('https://jsonplaceholder.typicode.com/users')
+//   .get('/users/1')
+//   .reply(200, {
+//     id: 4,
+//     name: "Patricia Lebsack",
+//     username: "Karianne",
+//     email: "Julianne.OConner@kory.org",
+//   });
+  const mockFetch = jest.fn().mockReturnValue(Promise.resolve({
+    json: () => Promise.resolve({
+      count: 87,
+      results: [0,1,2,3,4,5]
+    })
+  }))
 
   it('should handle initial dispatch and receive REQUEST_ROBOTS_PENDING', () => {
     const store = mockStore();
@@ -48,7 +54,7 @@ const jsonPlaceholder = nock('https://jsonplaceholder.typicode.com/users')
       payload: 'users'
     }
     expect.assertions(1);
-    return expect(apiCall(jsonPlaceholder)).toBe(expectedAction);
+    return apiCall('https://jsonplaceholder.typicode.com/users');
   });
 
   
