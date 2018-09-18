@@ -29,6 +29,6 @@ const mockStore = configureMockStore([thunkMiddleware]);
     const expectedAction = {
       type: REQUEST_ROBOTS_PENDING
     }
-    expect(action).toEqual(expectedAction);  
+    expect(action[0]).toEqual(expectedAction);  
   });
 });
