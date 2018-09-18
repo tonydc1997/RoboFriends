@@ -22,6 +22,16 @@ describe('setSearchField action', () => {
 describe('requestRobots action', () => {
 const mockStore = configureMockStore([thunkMiddleware]);
 
+  it('should handle initial dispatch and receive REQUEST_ROBOTS_PENDING', () => {
+    const store = mockStore();
+    store.dispatch(actions.requestRobots());
+    const action = store.getActions();
+    const expectedAction = {
+      type: REQUEST_ROBOTS_PENDING
+    }
+    expect(action[0]).toEqual(expectedAction);  
+  });
+
   it('should handle initial dispatch', () => {
     const store = mockStore();
     store.dispatch(actions.requestRobots());
@@ -31,4 +41,6 @@ const mockStore = configureMockStore([thunkMiddleware]);
     }
     expect(action[0]).toEqual(expectedAction);  
   });
+
+
 });
