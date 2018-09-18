@@ -43,7 +43,12 @@ const jsonPlaceholder = nock('https://jsonplaceholder.typicode.com/users')
   });
 
   it('should make apiCall', () => {
-    expect(apiCall(jsonPlaceholder[0])).toBe();
+    const expectedAction = {
+      type: REQUEST_ROBOTS_SUCCESS,
+      payload: 'users'
+    }
+    expect.assertions(1);
+    return expect(apiCall(jsonPlaceholder)).toBe(expectedAction);
   });
 
   
