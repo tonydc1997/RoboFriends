@@ -23,6 +23,14 @@ describe('setSearchField action', () => {
 
 describe('requestRobots action', () => {
 const mockStore = configureMockStore([thunkMiddleware]);
+const jsonPlaceholder = nock('https://jsonplaceholder.typicode.com/users')
+  .get('/users/1')
+  .reply(200, {
+    id: 4,
+    name: "Patricia Lebsack",
+    username: "Karianne",
+    email: "Julianne.OConner@kory.org",
+  });
 
   it('should handle initial dispatch and receive REQUEST_ROBOTS_PENDING', () => {
     const store = mockStore();
@@ -35,7 +43,7 @@ const mockStore = configureMockStore([thunkMiddleware]);
   });
 
   it('should make apiCall', () => {
-    expect(apiCall('https://jsonplaceholder.typicode.com/users')).toBe();
+    expect(apiCall(jsonPlaceholder[0])).toBe();
   });
 
   
