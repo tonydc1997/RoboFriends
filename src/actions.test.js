@@ -8,6 +8,7 @@ import {
 import configureMockStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
 import { apiCall } from './api/api';
+import nock from 'nock';
 
 describe('setSearchField action', () => {
   it('should create an action to search for robots', () => {
