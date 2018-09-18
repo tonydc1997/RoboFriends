@@ -32,14 +32,8 @@ const mockStore = configureMockStore([thunkMiddleware]);
     expect(action[0]).toEqual(expectedAction);  
   });
 
-  it('should handle initial dispatch', () => {
-    const store = mockStore();
-    store.dispatch(actions.requestRobots());
-    const action = store.getActions();
-    const expectedAction = {
-      type: REQUEST_ROBOTS_PENDING
-    }
-    expect(action[0]).toEqual(expectedAction);  
+  it('should make apiCall', () => {
+
   });
 
 
