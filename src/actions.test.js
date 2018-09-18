@@ -6,7 +6,7 @@ import {
   REQUEST_ROBOTS_FAILED  
 } from './constants.js';
 import configureStore from 'redux-mock-store';
-import thunkMiddleware from 'redux-mock-store';
+import thunkMiddleware from 'redux-thunk';
 
 describe('setSearchField action', () => {
   it('should create an action to search for robots', () => {
