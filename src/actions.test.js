@@ -7,6 +7,7 @@ import {
 } from './constants.js';
 import configureMockStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
+import { apiCall } from './api/api';
 
 describe('setSearchField action', () => {
   it('should create an action to search for robots', () => {
@@ -33,8 +34,10 @@ const mockStore = configureMockStore([thunkMiddleware]);
   });
 
   it('should make apiCall', () => {
-
+    expect(apiCall('https://jsonplaceholder.typicode.com/users')).toBe();
   });
+
+  
 
 
 });
