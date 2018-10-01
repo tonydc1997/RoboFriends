@@ -6,4 +6,8 @@ ignore:
     - react-scripts > fsevents > node-pre-gyp > tar > chownr:
         reason: None given
         expires: '2018-10-31T16:23:14.086Z'
+  'npm:braces:20180219':
+    - react-scripts > jest > jest-cli > micromatch > braces:
+        reason: None given
+        expires: '2018-10-31T16:33:25.756Z'
 patch: {}
