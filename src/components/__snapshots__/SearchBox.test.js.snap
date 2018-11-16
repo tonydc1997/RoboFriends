@@ -18,11 +18,10 @@ ShallowWrapper {
     "props": Object {
       "children": <input
         aria-label="Search Robots"
-        className="pa3 ba b--green bg-lightest-blue"
-        onChange={undefined}
+        className="pa3 ba b--green bg-lightest-blue br2"
         placeholder="search robots"
         type="search"
-/>,
+      />,
       "className": "pa2",
     },
     "ref": null,
@@ -32,7 +31,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "aria-label": "Search Robots",
-        "className": "pa3 ba b--green bg-lightest-blue",
+        "className": "pa3 ba b--green bg-lightest-blue br2",
         "onChange": undefined,
         "placeholder": "search robots",
         "type": "search",
@@ -51,11 +50,10 @@ ShallowWrapper {
       "props": Object {
         "children": <input
           aria-label="Search Robots"
-          className="pa3 ba b--green bg-lightest-blue"
-          onChange={undefined}
+          className="pa3 ba b--green bg-lightest-blue br2"
           placeholder="search robots"
           type="search"
-/>,
+        />,
         "className": "pa2",
       },
       "ref": null,
@@ -65,7 +63,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "aria-label": "Search Robots",
-          "className": "pa3 ba b--green bg-lightest-blue",
+          "className": "pa3 ba b--green bg-lightest-blue br2",
           "onChange": undefined,
           "placeholder": "search robots",
           "type": "search",
