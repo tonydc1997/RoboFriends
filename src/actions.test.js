@@ -53,7 +53,6 @@ const mockStore = configureMockStore([thunkMiddleware]);
       type: REQUEST_ROBOTS_SUCCESS,
       payload: 'users'
     }
-    expect.assertions(1);
     return apiCall('https://jsonplaceholder.typicode.com/users');
   });
 
