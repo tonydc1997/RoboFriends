@@ -3,24 +3,32 @@ env:
   es6: true
   jest: true 
 
-extends: airbnb, plugin:prettier/recommended
+extends:
+  - airbnb
+  - plugin:prettier/recommended
 
 rules: 
   class-methods-use-this: off
   import/no-name-as-default: off
   react/jsx-filename-extension: error
-  extensions: .js, .jsx
-  semi: error, always
+  extensions:
+    - .js
+    - .jsx
+  semi:
+    - error
+    - always
   quotes: 
-    error,
-    single,
-    avoidEscape: true
-    allowTemplateLiterals: true
+    - error
+    - single
+    -
+      avoidEscape: true
+      allowTemplateLiterals: true
   prettier/prettier:
-    error
-    singleQuote: true
-    tabWidth: 2
-    trailingComna: all
+    - error
+    -
+      singleQuote: true
+      tabWidth: 2
+      trailingComna: all
 
   parser: babel-eslint
   parserOptions:
