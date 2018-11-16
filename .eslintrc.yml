@@ -22,19 +22,8 @@ rules:
   comma-dangle: 
     - error
     - always
-  quotes: 
-    - error
-    - single
-    -
-      avoidEscape: true
-      allowTemplateLiterals: true
-  prettier/prettier:
-    - error
-    -
-      singleQuote: true
-      tabWidth: 2
-      trailingComna: all
-
+  quotes: [error, "single", "avoid-escape", "allowTemplateLiterals"]
+  prettier/prettier: error
   parser: babel-eslint
   parserOptions:
     ecmaVersion: 2019
