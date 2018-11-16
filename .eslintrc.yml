@@ -19,9 +19,6 @@ rules:
   semi:
     - error
     - always
-  comma-dangle: 
-    - error
-    - always
   quotes: [error, "single", "avoid-escape", "allowTemplateLiterals"]
   prettier/prettier: error
   parser: babel-eslint
