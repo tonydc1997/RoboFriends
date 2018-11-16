@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { setSearchField, requestRobots } from "../actions";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { setSearchField, requestRobots } from '../actions';
 
-import MainPage from "../components/MainPage";
-import "./App.css";
+import MainPage from '../components/MainPage';
+import './App.css';
 
 const mapStateToProps = state => ({
   searchField: state.searchRobots.searchField,
   robots: state.requestRobots.robots,
-  isPending: state.requestRobots.isPending
+  isPending: state.requestRobots.isPending,
 });
 
 const mapDispatchToProps = dispatch => ({
   onSearchChange: event => dispatch(setSearchField(event.target.value)),
-  onRequestRobots: () => dispatch(requestRobots())
+  onRequestRobots: () => dispatch(requestRobots()),
 });
 
 class App extends Component {
@@ -24,5 +24,5 @@ class App extends Component {
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(App);
