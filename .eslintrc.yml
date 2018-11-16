@@ -5,7 +5,9 @@ env:
 
 extends:
   - airbnb
-  - plugin:prettier/recommended
+
+plugins:
+  - prettier
 
 rules: 
   class-methods-use-this: off
@@ -15,6 +17,9 @@ rules:
     - .js
     - .jsx
   semi:
+    - error
+    - always
+  comma-dangle: 
     - error
     - always
   quotes: 
