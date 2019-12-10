@@ -1,0 +1,10 @@
+.bg-purple-gradient {
+  background: linear-gradient(
+    to bottom,
+    #5679f9,
+    #5679f9,
+    #5679f9,
+    #5679f9,
+    #5679f9
+  );
+}
