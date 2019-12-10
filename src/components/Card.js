@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({ name, email, id }) => {
   return (
     <div
-      className="tc white dib br3 pa3 ma2 grow bw2 shadow-5"
+      className="tc white w-20 dib br3 pa3 ma2 grow bw2 shadow-5"
       style={{
         background:
           'linear-gradient(to bottom, #5679f9, #5679f9, #5679f9, #5679f9, #5679f9)',
