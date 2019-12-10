@@ -4,8 +4,8 @@ class CounterButton extends Component {
   constructor() {
     super();
     this.state = {
-      count: 1
-    }
+      count: 1,
+    };
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -18,17 +18,24 @@ class CounterButton extends Component {
 
   updateCount = () => {
     this.setState(state => {
-      return {count: state.count + 1}
-    })
-  }
+      return { count: state.count + 1 };
+    });
+  };
 
   render() {
     return (
-      <button className='br2 bg-light-green b--navy pb1 pt1 grow' onClick={this.updateCount} >
+      <button
+        className="br2 white b--transparent pb1 pt1 pa5 mb3 grow"
+        style={{
+          background:
+            'linear-gradient(to bottom, #5679f9, #5679f9, #5679f9, #5679f9, #5679f9)',
+        }}
+        onClick={this.updateCount}
+      >
         Count: {this.state.count}
       </button>
     );
   }
 }
 
-export default CounterButton; 
+export default CounterButton;

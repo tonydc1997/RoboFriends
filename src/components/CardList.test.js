@@ -9,10 +9,9 @@ describe('CardList component', () => {
         id: 1,
         name: 'Ham Sarris',
         email: 'hamSarris@gmail.com',
-        key: '2341234'
-      }
-    ]
+        key: '2341234',
+      },
+    ];
     expect(shallow(<CardList robots={mockRobots} />)).toMatchSnapshot();
   });
-  
 });

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import CounterButton from "./CounterButton";
+import CounterButton from './CounterButton';
 
 class Header extends Component {
-shouldComponentUpdate(nextProps, nextState) {
-  return false;
-}
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
 
   render() {
-    return(
+    return (
       <div>
-        <h1 className='f2'>RoboFriends</h1>
+        <h1 className="f2">RoboFriends</h1>
         <CounterButton />
       </div>
     );

@@ -7,37 +7,38 @@ import ErrorBoundary from '../components/ErrorBoundary';
 import Header from '../components/Header';
 import './MainPage.css';
 
-
 class MainPage extends Component {
-
   componentDidMount() {
     this.props.onRequestRobots();
   }
 
   filterRobots = () => {
     return this.props.robots.filter(robot => {
-      return robot.name.toLowerCase().includes(this.props.searchField.toLowerCase());
-    })
-  }
+      return robot.name
+        .toLowerCase()
+        .includes(this.props.searchField.toLowerCase());
+    });
+  };
 
   render() {
     const { onSearchChange, isPending } = this.props;
-    
-    return (
-        <div className='tc'>
-          <Header />
-          <SearchBox searchChange={onSearchChange} />
-          <Scroll>
-            { isPending ? <h1>Loading</h1> :
-              <ErrorBoundary>
-                <CardList robots={this.filterRobots(this.props.robots)}/>
-              </ErrorBoundary>
-            }
-          </Scroll>
-        </div>
-      );
-    }
-  }
 
+    return (
+      <div className="tc">
+        <Header />
+        <SearchBox searchChange={onSearchChange} />
+        <Scroll>
+          {isPending ? (
+            <h1>Loading</h1>
+          ) : (
+            <ErrorBoundary>
+              <CardList robots={this.filterRobots(this.props.robots)} />
+            </ErrorBoundary>
+          )}
+        </Scroll>
+      </div>
+    );
+  }
+}
 
 export default MainPage;

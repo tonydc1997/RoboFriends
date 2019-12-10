@@ -3,11 +3,10 @@ import { shallow } from 'enzyme';
 import CounterButton from './CounterButton';
 
 describe('CounterButton component', () => {
-
   let wrapper, instance;
 
   beforeEach(() => {
-    wrapper = shallow(<CounterButton initialCountValue={1}/>);
+    wrapper = shallow(<CounterButton initialCountValue={1} />);
     instance = wrapper.instance();
   });
 
@@ -33,7 +32,4 @@ describe('CounterButton component', () => {
     expect(instance.state.count).toBe(1);
     expect(instance.shouldComponentUpdate(null, 1)).toBe(false);
   });
-  
-
-
 });
