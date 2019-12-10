@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import SearchBox from './SearchBox';
 
 describe('SearchBox Component', () => {
-
   let searchBoxComponent;
 
   beforeEach(() => {
@@ -18,6 +17,4 @@ describe('SearchBox Component', () => {
   it('SearchBox: Snapshots the CSS-in-JS styles so if altered and breaks the UX, one can view the differences', () => {
     expect(searchBoxComponent).toMatchSnapshot();
   });
-
-  
 });

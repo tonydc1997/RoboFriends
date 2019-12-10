@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import Header from './Header';
 
 describe('Header Component', () => {
-
   let headerComponent;
 
   beforeEach(() => {
@@ -17,9 +16,8 @@ describe('Header Component', () => {
   });
 
   it('shouldComponentUpdate: should return false', () => {
-    expect(headerComponent.instance().shouldComponentUpdate(null, null)).toBe(false);
-    
+    expect(headerComponent.instance().shouldComponentUpdate(null, null)).toBe(
+      false
+    );
   });
-
-
 });

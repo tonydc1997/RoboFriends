@@ -6,5 +6,4 @@ describe('Card component', () => {
   it('Card: renders card component', () => {
     expect(shallow(<Card />)).toMatchSnapshot();
   });
-
 });

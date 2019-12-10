@@ -4,7 +4,6 @@ import MainPage from './MainPage';
 import Scroll from './Scroll';
 
 describe('MainPage component', () => {
-
   let wrapper, mockProps;
 
   beforeEach(() => {
@@ -12,9 +11,9 @@ describe('MainPage component', () => {
       onRequestRobots: jest.fn(),
       robots: [],
       searchField: '',
-      isPending: false
-    }
-    wrapper = shallow(<MainPage { ...mockProps }/>);
+      isPending: false,
+    };
+    wrapper = shallow(<MainPage {...mockProps} />);
   });
 
   it('MainPage: shallow renders without crashing', () => {
@@ -28,28 +27,30 @@ describe('MainPage component', () => {
   it('filterRobots: renders correctly when array is filled', () => {
     mockProps = {
       onRequestRobots: jest.fn(),
-      robots: [{
+      robots: [
+        {
+          id: 1,
+          name: 'Bruce Brenner',
+          username: 'Bruce',
+          email: 'bb@gmail.com',
+        },
+      ],
+      searchField: '',
+      isPending: false,
+    };
+    wrapper = shallow(<MainPage {...mockProps} />);
+    expect(wrapper.instance().filterRobots()).toEqual([
+      {
         id: 1,
         name: 'Bruce Brenner',
         username: 'Bruce',
-        email: 'bb@gmail.com'
-      }],
-      searchField: '',
-      isPending: false
-    }
-    wrapper = shallow(<MainPage { ...mockProps } />);
-    expect(wrapper.instance().filterRobots()).toEqual([{
-      id: 1,
-      name: 'Bruce Brenner',
-      username: 'Bruce',
-      email: 'bb@gmail.com'
-    }]);
+        email: 'bb@gmail.com',
+      },
+    ]);
   });
 
   describe('Scroll Component', () => {
-
     describe('Initial state of Scroll Component', () => {
-
       let scrollComponent;
 
       beforeEach(() => {
@@ -59,38 +60,36 @@ describe('MainPage component', () => {
       it('isPending: should return a state', () => {
         expect(scrollComponent.instance()).toBe(null);
       });
-
-
     });
 
     describe('When isPending returns true', () => {
-
       let scrollComponent;
 
       beforeEach(() => {
-        scrollComponent = shallow(<Scroll isPending={true}><h1>Loading</h1></Scroll>);
+        scrollComponent = shallow(
+          <Scroll isPending={true}>
+            <h1>Loading</h1>
+          </Scroll>
+        );
       });
 
       it('isPending: should return <h1>Loading</h1>', () => {
         expect(scrollComponent.find('h1').exists()).toBeTruthy();
-        expect(scrollComponent.html()).toContain(
-          '<h1>Loading</h1>'
-        );
+        expect(scrollComponent.html()).toContain('<h1>Loading</h1>');
       });
-
-
     });
-  
-
 
     describe('When isPending returns false', () => {
-
       let scrollComponent;
 
       beforeEach(() => {
-        scrollComponent = shallow(<Scroll><div>I have an ErrorBoundary, and a CardList full of Cards!</div></Scroll>);
+        scrollComponent = shallow(
+          <Scroll>
+            <div>I have an ErrorBoundary, and a CardList full of Cards!</div>
+          </Scroll>
+        );
       });
-      
+
       it('isPending: should return children components', () => {
         expect(scrollComponent.find('h1').exists()).toBeFalsy();
         expect(scrollComponent.find('div').exists()).toBeTruthy();
@@ -98,15 +97,6 @@ describe('MainPage component', () => {
           '<div>I have an ErrorBoundary, and a CardList full of Cards!</div>'
         );
       });
-
-
     });
-
-
   });
-
-
-  
-  
-
 });
