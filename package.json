@@ -4,10 +4,6 @@
   "private": true,
   "homepage": "https://tonydc1997.github.io/RoboFriends",
   "dependencies": {
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "husky": "^1.1.4",
-    "lint-staged": "^8.0.4",
     "react": "^16.3.1",
     "react-dom": "^16.3.3",
     "react-redux": "^5.0.7",
@@ -16,17 +12,6 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "tachyons": "^4.9.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
   },
   "scripts": {
     "start": "react-scripts start",
