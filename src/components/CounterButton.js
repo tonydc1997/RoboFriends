@@ -25,7 +25,7 @@ class CounterButton extends Component {
   render() {
     return (
       <button
-        className="br2 white b--transparent pb1 pt1 grow"
+        className="br2 white b--transparent pb1 pt1 pa5 mb3 grow"
         style={{
           background:
             'linear-gradient(to bottom, #5679f9, #5679f9, #5679f9, #5679f9, #5679f9)',
